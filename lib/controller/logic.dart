@@ -1,5 +1,3 @@
-
-
 class Finder {
   int searchInvalidNumber(controller) {
     var fin;
@@ -24,7 +22,7 @@ class Finder {
         for (int a in table) {
           if (a % 2 != 0) {
             fin = a;
-
+            
             print('$fin');
           }
         }

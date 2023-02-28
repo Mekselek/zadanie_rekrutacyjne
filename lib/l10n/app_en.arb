@@ -1,0 +1,10 @@
+{
+  "header": "Type your numbers",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+  "buttonTextFirstPage": "Search",
+  "buttonTextSecondPage": "Back",
+  "secondPageHeader": "INVALID NUMBER IS:",
+  "errorMessage": "Please use valid values"
+}

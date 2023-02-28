@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
 import 'package:google_fonts/google_fonts.dart';
+
 
 import 'controller/logic.dart';
 import 'view/second_screen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -17,10 +20,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(),
+      home: MyHomePage(),
     );
   }
 }
@@ -52,7 +57,8 @@ class _MyHomePageState extends State<MyHomePage> {
               height: 50,
             ),
             Text(
-              'WPROWADZ LICZBY',
+              AppLocalizations.of(context).header,
+              // context.loc.name,
               textAlign: TextAlign.center,
               style: GoogleFonts.inter(
                   textStyle: const TextStyle(
@@ -93,8 +99,8 @@ class _MyHomePageState extends State<MyHomePage> {
                           builder: (context) =>
                               SecondScreen(dataPassed: dataPressed)));
                 },
-                child: const Text(
-                  'Wyszukaj',
+                child: Text(
+                  AppLocalizations.of(context).buttonTextFirstPage,
                   style: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
                 )),
           ],

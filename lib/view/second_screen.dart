@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class SecondScreen extends StatelessWidget {
   const SecondScreen({super.key, required this.dataPassed});
@@ -17,7 +18,7 @@ class SecondScreen extends StatelessWidget {
                 child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-              Text('Nieprawidłowa liczba to:',
+              Text(AppLocalizations.of(context).secondPageHeader,
                   style: GoogleFonts.inter(
                       textStyle: const TextStyle(
                     fontSize: 20,
@@ -28,7 +29,7 @@ class SecondScreen extends StatelessWidget {
                       style: const TextStyle(
                           fontSize: 165,
                           color: Color.fromRGBO(253, 255, 171, 1)))
-                  : const Text('Podaj prawidłowe wartości',
+                  : Text(AppLocalizations.of(context).errorMessage,
                       style: TextStyle(
                           fontSize: 20, color: Color.fromARGB(255, 239, 0, 0))),
               TextButton(
@@ -37,8 +38,8 @@ class SecondScreen extends StatelessWidget {
                   onPressed: () {
                     Navigator.pop(context);
                   },
-                  child: const Text(
-                    'Wroc',
+                  child: Text(
+                    AppLocalizations.of(context).buttonTextSecondPage,
                     style: TextStyle(color: Colors.black),
                   )),
             ]))),

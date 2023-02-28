@@ -1,0 +1,13 @@
+{
+  "header": "WPROWADŹ LICZBY",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+  
+  "buttonTextFirstPage": "Wyszukaj ",
+  "buttonTextSecondPage": "Wróć",
+  "secondPageHeader": "NIEPRAWIDŁOWA LICZBA TO:",
+  "errorMessage": "Podaj prawidłowe wartości"
+
+  
+}
