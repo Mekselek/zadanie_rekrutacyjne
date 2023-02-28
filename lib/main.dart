@@ -3,7 +3,6 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 import 'package:google_fonts/google_fonts.dart';
 
-
 import 'controller/logic.dart';
 import 'view/second_screen.dart';
 
@@ -85,7 +84,7 @@ class _MyHomePageState extends State<MyHomePage> {
               controller: controller,
             ),
             const SizedBox(
-              height: 30,
+              height: 29,
             ),
             TextButton(
                 style: TextButton.styleFrom(
