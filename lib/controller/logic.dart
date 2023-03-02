@@ -16,14 +16,13 @@ class Finder {
           temp2++;
         }
       }
-      print('Parzyste $temp1');
-      print('Nieparzytste $temp2');
+     
       if (temp1 > temp2) {
         for (int a in table) {
           if (a % 2 != 0) {
             fin = a;
             
-            print('$fin');
+           
           }
         }
       } else {
@@ -31,7 +30,7 @@ class Finder {
           if (a % 2 == 0) {
             fin = a;
 
-            print('$fin');
+            
           }
         }
       }
